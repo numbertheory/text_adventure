@@ -57,7 +57,7 @@ You can modify `data/world.json` to create your own adventures. The format requi
 -   `rooms`: A list of room objects containing:
     -   `id`: Unique identifier.
     -   `name`: Display name.
-    -   `description`: Flavour text.
+    -   `description`: Description of the room.
     -   `items`: List of item IDs initially in the room.
     -   `exits`: Map of directions (`n`, `s`, `e`, `w`) to destination room IDs.
     -   `locked`: Boolean (optional, defaults to false).
