@@ -1,0 +1,47 @@
+{
+  "starting_room": "start",
+  "rooms": [
+    {
+      "id": "start",
+      "name": "Dark Forest Clearing",
+      "description": "You are standing in a small clearing in a dark forest. To the north, you see a faint light.",
+      "items": ["rusty_key"],
+      "exits": {
+        "n": "hallway"
+      }
+    },
+    {
+      "id": "hallway",
+      "name": "Stone Hallway",
+      "description": "You are in a cold stone hallway. The forest is to the south. To the east is a heavy wooden door.",
+      "items": [],
+      "exits": {
+        "s": "start",
+        "e": "treasure_room"
+      }
+    },
+    {
+      "id": "treasure_room",
+      "name": "Treasure Room",
+      "description": "You are in a glittering room filled with riches!",
+      "items": ["gold_bar"],
+      "exits": {
+        "w": "hallway"
+      },
+      "locked": true,
+      "key_id": "rusty_key"
+    }
+  ],
+  "items": [
+    {
+      "id": "rusty_key",
+      "name": "Rusty Key",
+      "description": "An old, rusty iron key."
+    },
+    {
+      "id": "gold_bar",
+      "name": "Gold Bar",
+      "description": "A heavy bar of solid gold."
+    }
+  ]
+}
